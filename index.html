@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background: linear-gradient(120deg, #e3f2fd 0%, #bbdefb 100%); min-height: 100vh; }
+        .home-card { border-radius: 28px; background: #fff; box-shadow: 0 8px 32px 0 rgba(25, 118, 210, 0.10); padding: 3rem 2rem; }
+        .home-title { color: #1976d2; font-weight: 700; font-size: 2.5rem; }
+        .home-desc { color: #1976d2; font-size: 1.2rem; }
+        .home-img { max-width: 340px; width: 100%; display: block; margin: 0 auto 2rem auto; border-radius: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); }
+        .btn-calc { background: linear-gradient(90deg,#1976d2 0%,#64b5f6 100%); border:none; font-weight:bold; letter-spacing:1px; font-size:1.2rem; padding: 0.75rem 2.5rem; border-radius: 18px; }
+        .btn-calc:hover { background: linear-gradient(90deg,#64b5f6 0%,#1976d2 100%); }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
+      <img src="static/logo.jpg" alt="Logo" style="height:40px; width:auto; margin-right:12px; border-radius:8px;">
+      Health Insurance Predictor
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/history">History</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-lg-8 col-xl-7">
+            <div class="home-card text-center">
+                <img src="static/health-insurance.webp" alt="Insurance Illustration" class="home-img">
+                <div class="home-title mb-3">Welcome to Your Health Insurance Premium Calculator</div>
+                <div class="home-desc mb-4">Get instant, accurate premium estimates for you and your family. Compare, plan, and secure your health with confidence — just like the pros do!</div>
+                <a href="/project" class="btn btn-calc"><i class="fa-solid fa-calculator me-2"></i>Start Calculating</a>
+            </div>
+        </div>
+    </div>
+    <!-- About Section Start -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="about-section mt-5" style="background:#fff; border-radius:20px; box-shadow:0 8px 32px 0 rgba(25,118,210,0.10); padding:2.5rem 2rem;">
+                <h2 class="mb-4 text-center fw-bold" style="color:#1976d2;">About This Project</h2>
+                <p class="lead">Insurance Predictor is a modern web application designed to estimate your insurance premium based on your personal and health details. Powered by machine learning, it provides quick, reliable, and personalized premium predictions to help you make informed decisions.</p>
+                <ul class="list-group list-group-flush mb-3">
+                  <li class="list-group-item">Easy-to-use, beautiful interface</li>
+                  <li class="list-group-item">Instant premium predictions</li>
+                  <li class="list-group-item">Secure and private</li>
+                  <li class="list-group-item">Built with Python, Flask, and Bootstrap</li>
+                </ul>
+                <p>Our mission is to make insurance more transparent and accessible for everyone. Whether you're planning for your future or just curious, this tool is here to help!</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="about-section mt-4" style="background:#fff; border-radius:20px; box-shadow:0 8px 32px 0 rgba(25,118,210,0.10); padding:2.5rem 2rem;">
+                <h2 class="mb-4 text-center fw-bold" style="color:#1976d2;">Project Details</h2>
+                <h5 class="fw-bold">Tech Stack</h5>
+                <ul class="list-group list-group-flush mb-3">
+                  <li class="list-group-item">Python 3</li>
+                  <li class="list-group-item">Flask Web Framework</li>
+                  <li class="list-group-item">Bootstrap 5 for UI</li>
+                  <li class="list-group-item">Joblib for Model Serialization</li>
+                  <li class="list-group-item">HTML5, CSS3, Jinja2</li>
+                </ul>
+                <h5 class="fw-bold">Features</h5>
+                <ul class="list-group list-group-flush mb-3">
+                  <li class="list-group-item">User-friendly insurance premium prediction form</li>
+                  <li class="list-group-item">Instant, accurate predictions using ML model</li>
+                  <li class="list-group-item">Prediction history tracking</li>
+                  <li class="list-group-item">Contact form for feedback</li>
+                  <li class="list-group-item">Modern, responsive design</li>
+                </ul>
+                <p>This project demonstrates the power of data science and web development to solve real-world problems. Explore the code, try predictions, and see how machine learning can make a difference!</p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+</div>
+<div class="footer mt-5">
+    <div class="container text-center">
+        <div class="mb-2">
+            <a href="https://wa.me/919999999999" target="_blank" class="mx-3" style="font-size:2.2rem; color:#25D366;">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="mx-3" style="font-size:2.2rem; color:#E1306C;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:your@email.com" class="mx-3" style="font-size:2.2rem; color:#0072c6;">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="tel:+919999999999" class="mx-3" style="font-size:2.2rem; color:#28a745;">
+                <i class="fas fa-phone"></i> Phone
+            </a>
+        </div>
+        <span class="text-muted">&copy; 2024 Insurance Predictor | Designed with ❤️</span>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
